@@ -1,28 +1,30 @@
 <template>
   <div id="app">
     <HeaderMenu />
-    <img alt="Vue logo" src="./assets/logo.png">
+    <Therapies />
+    <Footer />
   </div>
 </template>
 
 <script>
 import HeaderMenu from './components/HeaderMenu.vue'
+import Therapies from './components/Therapies/Therapies.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
-    HeaderMenu
+    HeaderMenu,
+    Therapies,
+    Footer
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: url("../img/light-grey-terrazzo.png"); /* www.toptal.com/designers/subtlepatterns/*/
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
 }
 </style>
