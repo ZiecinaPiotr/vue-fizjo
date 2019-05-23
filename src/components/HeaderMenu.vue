@@ -1,34 +1,23 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg fixed-top p-0 border-bottom shadow-sm rounded" id="navigation">
-      <a class="navbar-brand col-9 col-sm-6 offset-sm-2 col-md-4 offset-md-2 col-lg-3" id="logoside" href="Fizjoterapia-Hubert-Kostka">
-        <img id="logo" src="../../img/main-page/logoprzez.png" alt="Fizjoterapia-Hubert Kostka" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResidue" aria-controls="navbarResidue"
-      aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon icon-th-list-1"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResidue">
-        <ul class="navbar-nav nav-fill mx-auto p-0">
-          <li class="nav-item">
-            <a class="nav-link " href="O-mnie">O mnie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Oferta">Oferta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Galeria">Galeria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Kontakt">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Współpraca">Współpraca</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+		 <b-navbar toggleable="lg" type="dark" variant="info">
+			<b-navbar-brand href="Fizjoterapia-Hubert-Kostka">
+				<img left src="../../img/main-page/logoprzez.png" fluid-grow alt="Fizjoterapia Hubert Kostka">
+			</b-navbar-brand>
+
+			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+			<b-collapse id="nav-collapse" is-nav>
+				<b-navbar-nav>
+						<b-nav-item href="O-mnie">O mnie</b-nav-item>
+						<b-nav-item href="Oferta">Oferta</b-nav-item>
+						<b-nav-item href="Galeria">Galeria</b-nav-item>
+						<b-nav-item href="Kontakt">Kontakt</b-nav-item>
+						<b-nav-item href="Wspolpraca">Wspólpraca</b-nav-item>
+					</b-navbar-nav>
+			</b-collapse>
+		 </b-navbar>	
+</div>
 </template>
 
 <script>
